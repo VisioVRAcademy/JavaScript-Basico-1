@@ -58,10 +58,11 @@ console.log(5 > 2 ? "Cinco é maior que dois" : "Cinco não é maior que dois");
 // }
 // console.log(num);
 
+// var num;
 // if (true) {
-//     var num = 10;
+//     num = 10;
 // } else {
-//     var num = 20;
+//     num = 20;
 // }
 // console.log(num);
 

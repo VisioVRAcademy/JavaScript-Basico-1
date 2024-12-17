@@ -27,7 +27,14 @@ if (x === "5") {
     console.log("Não entrou no if!");
 }
 
-// Exemplo 5 - Utilizando igual de atribuição onde espera-se uma comparação
+// Exemplo 5 - Utilizando igual de atribuição onde espera-se uma comparação (errado)
+// if (var x = 10) { // Erro! Expressão esperada
+//     console.log("Entrou no if!");
+// } else {
+//     console.log("Não entrou no if!");
+// }
+
+// Exemplo 6 - Utilizando igual de atribuição onde espera-se uma comparação (certo)
 if (x = 10) {
     // Confusão! Aqui estamos usando o operador de atribuição (=) em vez de comparação (==)
     console.log("Entrou no if!"); // O código entrará no if, pois x = 10 retorna 10, que é truthy
@@ -41,7 +48,7 @@ if (x = 0) {
     console.log("Não entrou no if!");
 }
 
-// Exemplo 6 - Exemplo de uso do operador de atribuição (=) dentro de um bloco if
+// Exemplo 7 - Exemplo de uso do operador de atribuição (=) dentro de um bloco if
 var usuario = null;
 
 // Prévia de uma função que retorna um nome de usuário

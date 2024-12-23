@@ -26,14 +26,8 @@ var number = 2;
 console.log(++number);
 // console.log(number + 1);
 
-// console.log(number++);
-// console.log(number);
-
 // console.log(--number);
 // console.log(number - 1);
-
-// console.log(number--);
-// console.log(number);
 
 // Exemplo 3 - Operador ternário
 console.log(true ? 10 : 20);

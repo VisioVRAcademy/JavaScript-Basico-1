@@ -1,19 +1,20 @@
 // ESCOPO GLOBAL E LOCAL ------------------------------------------------------
 
 // Exemplo 1 - Escopo global
-let nome = "João"; // Variável no escopo global
+var nome = "João"; // Variável global
 
-function saudacao() {
-    console.log(nome); // A variável 'nome' pode ser acessada dentro da função
+function cumprimentar() {
+    console.log("Olá, " + nome);
 }
 
-saudacao(); // Imprime "João"
+cumprimentar(); // Olá, João
+console.log(nome); // João
 
 // Exemplo 2 - Escopo local
-function saudacao() {
-    let nome = "João"; // Variável no escopo local
-    console.log(nome); // A variável 'nome' só pode ser acessada dentro desta função
+function exemploLocal() {
+    var mensagem = "Esta é local";
+    console.log(mensagem); // Esta é local
 }
 
-saudacao(); // Imprime "João"
-console.log(nome); // Erro! 'nome' não está acessível fora da função
+exemploLocal();
+console.log(mensagem); // Erro: mensagem não está definida
